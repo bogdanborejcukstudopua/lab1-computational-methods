@@ -10,6 +10,7 @@ class TransientModel:
         self.L = params_dict['L']
         self.C = params_dict['C']
 
+# Опис системи диференціальних рівнянь .
     def system_equations(self, state, t, E_func):
         i, u_c = state
         E_val = E_func(t) # Джерело ЕРС може залежати від часу
